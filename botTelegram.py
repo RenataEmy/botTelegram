@@ -1,9 +1,13 @@
 import telebot
 from regex import dadosRegex
+from dotenv import load_dotenv
+import os
 
-CHAVE_API = "7866893107:AAFXCFsO9VIjnyG1M2O5e9R8LIA-NPsrK8g"
+load_dotenv()  # Carrega as variáveis do arquivo .env
 
-bot = telebot.TeleBot(CHAVE_API)
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+
+bot = telebot.TeleBot(BOT_TOKEN)
 
 
 
