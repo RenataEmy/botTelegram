@@ -9,8 +9,7 @@ BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
-
-
+#solicitar dados
 def supply_data():
     pass    
 
